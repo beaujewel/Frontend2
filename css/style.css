@@ -1,0 +1,561 @@
+@import url('https://fonts.google.com/specimen/Raleway#standard-styles');
+
+body {
+    margin: 0px;
+    background: white;
+    font-family: 'Raleway', sans-serif;
+    color: #515151;
+}
+
+h1 {
+    font-size: 2.125em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    text-shadow: 0 0 4px #000000;
+}
+
+h2 {
+    font-size: 1.75em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 1.375em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+h4 {
+    font-size: 0.9375em;;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9375em;
+}
+
+p {
+    font-size: 0.9375em;
+    line-height: 2;
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+a { 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dd3333
+}
+
+
+section {
+    padding: 3em 3.5em;
+}
+
+/* navigatie */
+
+header nav {
+    background-color: #252b2d;
+    padding: 2em 3.5em;
+
+}
+
+header nav img {
+    max-width: 13.125em;
+}
+
+header nav ul li {
+    padding-top: 1em;
+}
+
+header nav ul li a{
+    font-size: 0.875em;
+    color: white;
+}
+
+/* einde navigatie */
+
+/* hamburger menu */
+
+header div.burger {
+    float: right;
+    margin-top: 0.5em;
+}
+
+.line1, .line2, .line3 {
+    width: 1.5em;
+    height: 0.15em;
+    background: white;
+    margin: 0.4em;
+    transition: .4s;
+}
+
+header nav ul {
+    border-top: 2px solid white;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 0;
+    display: none;
+}
+
+.nav-active {
+    display: block;
+    }
+
+.active .line1 {
+     transform: rotate(-45deg) translate(-7px, 7px);
+        }
+        
+        .active .line2 {
+        opacity: 0;
+        }
+        
+        .active .line3 {
+        transform: rotate(45deg) translate(-5.5px, -6px);
+        }
+
+/* einde hamburger menu */
+
+/* eerste container */
+
+header section {
+    background-image: url(../images/foto1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3em 3.5em;
+}
+
+header h2 {
+    font-size: 1.625em;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+    text-transform: none;
+    text-shadow: 0 0 4px #000000;
+}
+
+header section ul {
+    text-align: center;
+}
+
+header section li {
+    padding: 1.5em 1em;
+}
+
+header section a {
+    font-size: 1.125em;
+    font-weight: 300; 
+    border: 1px solid white;
+    border-radius: 1.5em;
+    color: white ;
+    padding: 0.7em 1.5em;
+    text-shadow: 0 0 4px #000000;
+}
+
+header section a:hover, header section a:focus {
+    background-color: #dd3333;
+    color: white;
+    border: none;
+}
+
+/* einde eerste container */
+
+/* tweede container */
+
+main section:nth-child(even) {
+    background-color: #ebeced;
+}
+
+main section:nth-child(2) {
+    text-align: center;
+}
+
+main section:nth-child(2) p {
+    margin-bottom: 2em;
+}
+
+main section:nth-child(2) img {
+    width: 265px;
+    height: 180px;
+    margin-bottom: 2em;
+}
+
+main section:nth-child(2) a{
+    font-size: 0.875em;
+    font-weight: 300; 
+    border: 1px solid #dd3333;
+    border-radius: 1.5em;
+    color: #dd3333 ;
+    padding: 0.7em 1.5em;
+}
+
+main section:nth-child(2) a:hover {
+    background-color: #dd3333;
+    color: white;
+    border: none;
+}
+
+/* einde tweede container */
+
+/* derde container */
+
+main section:nth-child(3) div{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+
+div iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+main section:nth-child(3) img {
+    width: 16.56em;
+    height: 11.25em;
+    margin-bottom: 1em;
+}
+
+main section:nth-child(3) ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* einde derde container */
+
+/* vierde container */
+
+main section:nth-child(4) blockquote {
+    background-color: #00000033;
+    padding: 2em 1em;
+    font-size: 1.375em;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    color: #868686;
+    line-height: 1.7;
+    font-style: italic;
+
+}
+
+/* einde vierde container */
+
+/* footer */
+
+footer {
+    background-color: #292e31;
+    color: white;
+    padding: 3em 3.5em 1em 3.5em;
+}
+
+footer h3 {
+    font-size: 1.125em;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+}
+
+footer p {
+    line-height: 1.7;
+    font-weight: 100;
+}
+
+footer form input {
+    width: 16.5625em;
+    padding: 1em;
+    background-color: transparent;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+footer form input:nth-child(5) {
+    padding-bottom: 7em;
+}
+
+form input:nth-child(7) {
+    background-color: #dd3333;
+    border: none;
+    border-radius: 2em;
+}
+
+form input:nth-child(7):hover {
+    background-color: white;
+    color: #dd3333;
+    border: 1px solid #dd3333;
+}
+
+footer section {
+    text-align: center;
+    padding: 0px;
+    margin-top: 3em;
+}
+
+/* einde footer */
+
+/* extra css-styling kamers pagina */
+/* /////////////////////////////// */
+
+/* tweede container */
+
+#foto{
+    width: 16.5625em;
+}
+
+/* einde tweede container */
+
+/* derde container */
+
+section ul li h3 {
+    line-height: 1.5;
+}
+
+section ul li p {
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 0px;
+}
+
+.list li {
+    border-bottom: 1px solid #dd3333;
+    max-width: 20em;
+}
+
+.list li:nth-child(7) {
+    border-bottom: none;
+}
+
+/* einde derde container */
+
+/* vierde container */
+
+section:nth-child(4) article {
+    background-color: white;
+    border: 6px solid #252b2d;
+    padding: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+    max-width: 20em;
+}
+
+section:nth-child(4) article:nth-child(3) {
+    margin-bottom: 0px;
+}
+
+section:nth-child(4) article h3 {
+    margin-top: 0.5em;
+    color: #dd3333;
+}
+
+section:nth-child(4) article ul {
+    padding-bottom: 0.5em;
+ }
+
+section:nth-child(4) article li {
+   text-align: center;
+   margin-bottom: 0.5em;
+}
+
+section:nth-child(4) article a {
+    font-size: 1em;
+    font-weight: 300; 
+    background-color: #dd3333;
+    border-radius: 1.5em;
+    color: white;
+    padding: 0.7em 1.5em;
+}
+
+section:nth-child(4) article a:hover {
+    background-color: transparent;
+    color: #dd3333;
+    border: 1px solid #dd3333;
+}
+
+/* einde vierde container */
+
+/* responsive */
+
+/*
+
+@media only screen and (min-device-width: 1024px) {
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+    header nav ul {
+      border-top: none;
+      padding: 0;
+      margin-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  header nav ul li {
+      margin-left: 5em;
+  }
+  
+}
+*/
+
+
+@media only screen and (min-device-width: 480px) {
+
+    header section, section {
+        padding: 4em 5em;
+    }
+
+    /* tweede container */ 
+    main section:nth-child(2) img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* derde container */
+    section:nth-child(3) div {
+        margin-bottom: 2em;
+    }
+    
+     /* vierde container */
+    section:nth-child(4) div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 2em;
+    }
+
+    section:nth-child(4) div article {
+        width: 22.75em;
+    }
+
+
+    /* footer */
+
+    footer {
+        padding: 4em 5em;
+    }
+
+    footer div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer article:nth-child(1) {
+        max-width: 33em;
+    }
+
+    footer form input {
+        width: 23em;
+  }
+}
+
+  @media only screen and (min-device-width: 690px) {
+
+   /* vierde container */
+
+   section:nth-child(4) blockquote {
+        max-width: 16em;
+        align-content: center;
+    }
+
+  }
+
+  @media only screen and (min-device-width: 690px) and (max-device-width: 868px) {
+
+    /* footer */ 
+    footer article:nth-child(1) {
+        max-width: 100%;
+    }
+  }
+
+  @media only screen and (min-device-width: 868px) {
+
+    /* eerste container homepage */
+      header section {
+          padding: 10em 5em;
+      }
+
+      header section ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+  }
+
+  @media only screen and (min-device-width: 1024px) {
+      
+    /* eerste container homepage */
+    header section {
+        padding: 15em 5em;
+    }
+      
+    /* eerste container kamer pagina */
+    main section .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .flex div:nth-child(1) {
+        max-width: 50vw;
+    }
+
+    .flex img {
+        width: auto;
+    }
+
+    /* derde container kamerpagina */
+    #service {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    #service h2 {
+        margin-bottom: 2em;
+    }
+
+    /* vierde container kamerpagina */
+
+   #prijzen div{
+        column-gap: 10em;
+    }
+    
+    #prijzen h2 {
+        margin-bottom: 2em;
+    }
+  }
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1173px) {
+    .flex div:nth-child(1) {
+        max-width: 40vw;
+    }
+  }
